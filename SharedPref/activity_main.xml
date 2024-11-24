@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtVwUserNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name_label"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtUsrNm"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVwPass"
+        android:layout_width="95dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/password_label"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtPassword"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <CheckBox
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkBxRemMe"
+        android:layout_marginBottom="344dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginStart="38dp"
+        android:text="@string/remember_me_label"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="277dp"
+        android:text="@string/click_here_button"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkBxRemMe" />
+
+    <EditText
+        android:id="@+id/txtUsrNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="92dp"
+        android:ems="18"
+        android:hint="@string/enter_username_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#BD6E63"
+        app:layout_constraintBottom_toTopOf="@+id/chkBxRemMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtVwUserNm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
+        android:ems="18"
+        android:hint="@string/enter_password_hint"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#BD6E63"
+        app:layout_constraintBottom_toTopOf="@+id/chkBxRemMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtVwPass"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsrNm"
+        app:layout_constraintVertical_bias="0.35"
+        tools:ignore="Autofill" />
+</androidx.constraintlayout.widget.ConstraintLayout>
